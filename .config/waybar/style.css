@@ -1,0 +1,38 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+  padding: 0 6px;
+}
+
+window#waybar {
+  background-color: rgba(10, 10, 10, 0.95);
+  color: #cdd6f4;
+  border-radius: 10px;
+}
+
+#clock {
+  color: #fab387;
+}
+
+#battery {
+  color: #a6e3a1;
+}
+
+#memory {
+  color: #f9e2af;
+  font-weight: bold;
+}
+
+#network {
+  color: #89b4fa;
+}
+
+#custom-market.up {
+  color: #00ff00;
+}
+#custom-market.down {
+  color: #ff5555;
+}
+#custom-market.same {
+  color: #ffffff;
+}
