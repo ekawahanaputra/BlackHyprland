@@ -10,6 +10,7 @@ tes.png=imv.desktop
 image/png=feh.desktop
 application/pdf=org.pwmt.zathura.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
+audio/mpeg=cmus-mp3.desktop
 
 [Added Associations]
 image/png=imv.desktop;
