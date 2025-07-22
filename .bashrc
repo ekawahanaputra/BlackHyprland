@@ -22,7 +22,9 @@ alias starth='hyprland'
 alias logouth='hyprctl dispatch exit'
 alias mountusb='udisksctl mount -b /dev/sdc1'
 alias ejectusb='udisksctl unmount -b /dev/sdc1'
+alias usb='cd /run/media/blackarch'
 alias mountsdcard='udisksctl mount -b /dev/sdb1'
+alias sdcard='cd /run/media/blackarch/MANDALA'
 alias confhland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
 alias cleansystem='sudo pacman -Rns $(pacman -Qtdq)'
 alias cleanyay='yay -Sc && yay -Scc && yay -Rns $(pacman -Qdtq) && yay -Yc'
@@ -31,15 +33,21 @@ alias setmarket='nvim ~/.dotfiles/.config/waybar/market.py'
 alias takefoto='mpv av://v4l2:/dev/video0'
 alias enablevm='sudo systemctl start vmware-networks.service && sudo systemctl start vmware-usbarbitrator.service'
 alias disablevm='sudo systemctl stop vmware-networks.service && sudo systemctl stop vmware-usbarbitrator.service'
-alias bt='bluetuith'
-alias btON='sudo systemctl start bluetooth.service'
+alias btON='sudo systemctl start bluetooth.service && bluetuith'
 alias btOFF='sudo systemctl stop bluetooth.service'
 alias getYT='yt-dlp -x --audio-format mp3'
+alias feh='feh --draw-filename'
+
 
 clear(){
 command clear
 fastfetch
 echo""
 }
+
+
+export LF_PREVIEWER=~/.config/lf/preview.sh
+export LF_CLEANER="kitty +kitten icat --clear"
+
 
 
