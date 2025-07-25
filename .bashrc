@@ -12,7 +12,7 @@ PS1='\[\e[1;31m\][\u@\h]\[\e[0m\] \[\e[1;37m\]\$\[\e[0m\] '
 #####################################################################
 
 #FASTFETCH
-fastfetch
+fastfetch --logo ARCHlabs
 echo""
 
 #COMMAND MENU
@@ -26,7 +26,7 @@ alias usb='cd /run/media/blackarch'
 alias mountsdcard='udisksctl mount -b /dev/sdb1'
 alias sdcard='cd /run/media/blackarch/MANDALA'
 alias confhland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
-alias cleansystem='sudo pacman -Rns $(pacman -Qtdq)'
+alias cleansystem='sudo pacman -Scc && sudo pacman -Rns $(pacman -Qtdq)'
 alias cleanyay='yay -Sc && yay -Scc && yay -Rns $(pacman -Qdtq) && yay -Yc'
 alias run='python main.py'
 alias setmarket='nvim ~/.dotfiles/.config/waybar/market.py'
@@ -36,18 +36,9 @@ alias disablevm='sudo systemctl stop vmware-networks.service && sudo systemctl s
 alias btON='sudo systemctl start bluetooth.service && bluetuith'
 alias btOFF='sudo systemctl stop bluetooth.service'
 alias getYT='yt-dlp -x --audio-format mp3'
-alias feh='feh --draw-filename'
-
-
-clear(){
-command clear
-fastfetch
-echo""
-}
-
-
-export LF_PREVIEWER=~/.config/lf/preview.sh
-export LF_CLEANER="kitty +kitten icat --clear"
-
+alias wifitest='iw dev wlp3s0 link'
+alias nettest='ping -c 5' #IP Address
+alias routercek='ip route'
+alias ispcek='curl ifconfig.me'
 
 

@@ -8,7 +8,9 @@ myCommand = '''
             confhland       : to configure Hyprland
             mountusb        : to connect usb before use
             ejectusb        : to eject usb before reconnect
+            usb             : cd to directory media/blackarch
             mountsdcard     : to connect sdcard before use
+            sdcard          : cd to directory media/blackarch/MANDALA
             cleansystem     : to clean pacman package
             cleanyay        : to clean yay package
             run             : to run main.py 
@@ -21,9 +23,14 @@ myCommand = '''
 
 
             # BLUETOOTH
-            bt              : run bluetuith
-            btON            : power ON bluetooth
+            btON            : power ON bluetooth & open bluetuith
             btOFF           : power OFF bluetooth
+
+            # WIFI DIAGNOSTIC
+            wifitest        : diagnostic connection device (T480) to wireless (wifi)
+            nettest "IP"    : diagnostic connection to IP target
+            routercek       : show the router IP Address
+            ispcek          : show the ISP IP Address
 
 
             # OTHER
