@@ -26,6 +26,7 @@ alias usb='cd /run/media/blackarch'
 alias mountsdcard='udisksctl mount -b /dev/sdb1'
 alias sdcard='cd /run/media/blackarch/MANDALA'
 alias confhland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
+alias confi3='sudo nvim ~/.dotfiles/.config/i3/config'
 alias cleansystem='sudo pacman -Scc && sudo pacman -Rns $(pacman -Qtdq)'
 alias cleanyay='yay -Sc && yay -Scc && yay -Rns $(pacman -Qdtq) && yay -Yc'
 alias run='python main.py'
@@ -41,5 +42,7 @@ alias nettest='ping -c 5' #IP Address
 alias routercek='ip route'
 alias ispcek='curl ifconfig.me'
 alias inspect='arch-audit && ps aux --sort=-%mem | head && ss -tunap'
+alias mirror='xrandr --output HDMI-2 --same-as eDP-1 --mode 1920x1080'
+alias mirrorOFF='xrandr --output HDMI-2 --off'
 
 

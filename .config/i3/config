@@ -1,0 +1,20 @@
+set $mod Mod4  
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+
+# KEYBINDS
+bindsym $mod+a exec kitty
+bindsym $mod+d exec rofi -show drun
+bindsym $mod+f exec thunar
+bindsym $mod+x kill
+
+
+# EXIT I3
+bindsym $mod+q exit
+
+# BASIC LAYOUT
+
