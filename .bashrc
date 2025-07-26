@@ -40,5 +40,6 @@ alias wifitest='iw dev wlp3s0 link'
 alias nettest='ping -c 5' #IP Address
 alias routercek='ip route'
 alias ispcek='curl ifconfig.me'
+alias inspect='arch-audit && ps aux --sort=-%mem | head && ss -tunap'
 
 

@@ -26,12 +26,16 @@ myCommand = '''
             btON            : power ON bluetooth & open bluetuith
             btOFF           : power OFF bluetooth
 
+
             # WIFI DIAGNOSTIC
             wifitest        : diagnostic connection device (T480) to wireless (wifi)
             nettest "IP"    : diagnostic connection to IP target
             routercek       : show the router IP Address
             ispcek          : show the ISP IP Address
 
+            
+            # SECURITY
+            inspect         : to audit for vulnerability system & top app running
 
             # OTHER
             setmarket       : to choice the emiten on waybar
