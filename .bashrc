@@ -44,5 +44,6 @@ alias ispcek='curl ifconfig.me'
 alias inspect='arch-audit && ps aux --sort=-%mem | head && ss -tunap'
 alias mirror='xrandr --output HDMI-2 --same-as eDP-1 --mode 1920x1080'
 alias mirrorOFF='xrandr --output HDMI-2 --off'
+alias xfreecad='~/.dotfiles/scripts/run_freecad.sh'
 
 
