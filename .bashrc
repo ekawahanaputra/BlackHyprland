@@ -16,34 +16,69 @@ fastfetch --logo ARCHlabs
 echo""
 
 #COMMAND MENU
+#SYSTEM
 alias mycmd='cd && ./.dotfiles/mycommand.py'
 alias bashrc='sudo nvim ~/.dotfiles/.bashrc'
 alias starth='hyprland'
 alias logouth='hyprctl dispatch exit'
+alias confHland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
+alias confi3='sudo nvim ~/.dotfiles/.config/i3/config'
+
+
+#EXTERNAL STORAGE
 alias mountusb='udisksctl mount -b /dev/sdc1'
 alias ejectusb='udisksctl unmount -b /dev/sdc1'
 alias usb='cd /run/media/blackarch'
 alias mountsdcard='udisksctl mount -b /dev/sdb1'
 alias sdcard='cd /run/media/blackarch/MANDALA'
-alias confhland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
-alias confi3='sudo nvim ~/.dotfiles/.config/i3/config'
-alias cleansystem='sudo pacman -Scc && sudo pacman -Rns $(pacman -Qtdq)'
+
+
+#CLEAN SYSTEM
+alias cleanSystem='sudo pacman -Scc && sudo pacman -Rns $(pacman -Qtdq)'
 alias cleanyay='yay -Sc && yay -Scc && yay -Rns $(pacman -Qdtq) && yay -Yc'
-alias run='python main.py'
-alias setmarket='nvim ~/.dotfiles/.config/waybar/market.py'
-alias takefoto='mpv av://v4l2:/dev/video0'
-alias enablevm='sudo systemctl start vmware-networks.service && sudo systemctl start vmware-usbarbitrator.service'
-alias disablevm='sudo systemctl stop vmware-networks.service && sudo systemctl stop vmware-usbarbitrator.service'
+
+
+#VMWARE WORKSTATION
+alias enableVM='sudo systemctl start vmware-networks.service && sudo systemctl start vmware-usbarbitrator.service'
+alias disableVM='sudo systemctl stop vmware-networks.service && sudo systemctl stop vmware-usbarbitrator.service'
+
+
+#BLUETOOTH
 alias btON='sudo systemctl start bluetooth.service && bluetuith'
 alias btOFF='sudo systemctl stop bluetooth.service'
-alias getYT='yt-dlp -x --audio-format mp3'
-alias wifitest='iw dev wlp3s0 link'
-alias nettest='ping -c 5' #IP Address
-alias routercek='ip route'
-alias ispcek='curl ifconfig.me'
+
+
+#WIFI
+alias wifiON='nmcli radio wifi on'
+alias wifiOFF='nmcli radio wifi off'
+alias wifiScan='nmcli device wifi list'
+alias wifiConnect='nmcli device wifi connect --ask' #SSID
+alias wifiDisconnect='nmcli connection down' #SSID
+alias wifiTest='iw dev wlp3s0 link'
+alias netTest='ping -c 5' #IP Address
+alias routerCek='ip route'
+alias ispCek='curl ifconfig.me'
+
+
+#SECURITY
 alias inspect='arch-audit && ps aux --sort=-%mem | head && ss -tunap'
+
+
+#MIRRORING
 alias mirror='xrandr --output HDMI-2 --same-as eDP-1 --mode 1920x1080'
 alias mirrorOFF='xrandr --output HDMI-2 --off'
+
+
+#RUN X11 APP
 alias xfreecad='~/.dotfiles/scripts/run_freecad.sh'
 
+
+#DOWNLOAD
+alias getYT='yt-dlp -x --audio-format mp3'
+
+
+#OTHER
+alias run='python main.py'
+alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
+alias takeFoto='mpv av://v4l2:/dev/video0'
 
