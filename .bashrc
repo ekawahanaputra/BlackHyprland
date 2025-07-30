@@ -1,4 +1,4 @@
-#
+i#
 # ~/.bashrc
 #
 
@@ -38,21 +38,14 @@ alias cleanSystem='sudo pacman -Scc && sudo pacman -Rns $(pacman -Qtdq)'
 alias cleanyay='yay -Sc && yay -Scc && yay -Rns $(pacman -Qdtq) && yay -Yc'
 
 
-#VMWARE WORKSTATION
-alias enableVM='sudo systemctl start vmware-networks.service && sudo systemctl start vmware-usbarbitrator.service'
-alias disableVM='sudo systemctl stop vmware-networks.service && sudo systemctl stop vmware-usbarbitrator.service'
-
-
 #BLUETOOTH
 alias btON='sudo systemctl start bluetooth.service && bluetuith'
 alias btOFF='sudo systemctl stop bluetooth.service'
 
 
 #WIFI
-alias wifiON='nmcli radio wifi on'
+alias wifiON='nmcli radio wifi on && nmcli device wifi list && nmcli device wifi connect --ask'
 alias wifiOFF='nmcli radio wifi off'
-alias wifiScan='nmcli device wifi list'
-alias wifiConnect='nmcli device wifi connect --ask' #SSID
 alias wifiDisconnect='nmcli connection down' #SSID
 alias wifiTest='iw dev wlp3s0 link'
 alias netTest='ping -c 5' #IP Address
@@ -75,6 +68,11 @@ alias xfreecad='~/.dotfiles/scripts/run_freecad.sh'
 
 #DOWNLOAD
 alias getYT='yt-dlp -x --audio-format mp3'
+
+
+#HUGO
+alias createWeb='hugo new site' #name_of_site
+alias setHugoTheme='git submodule add' #link_theme_of_github
 
 
 #OTHER

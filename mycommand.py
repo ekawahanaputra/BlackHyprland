@@ -22,11 +22,6 @@ myCommand = '''
             cleanSystem             : to clean pacman package
             cleanyay                : to clean yay package
 
-            
-            # VMWARE WORKSTATION
-            enableVM                : prepare for vmWare workstation
-            disableVM               : finish for vmWare workstation
-
 
             # BLUETOOTH
             btON                    : power ON bluetooth & open bluetuith
@@ -35,10 +30,8 @@ myCommand = '''
 
             # WIFI
             nmtui                   : open network manager UI version
-            wifiON                  : activate wifi
+            wifiON                  : activate wifi, scan wifi & connect to network
             wifiOFF                 : deactivate wifi
-            wifiScan                : scan all wifi device network
-            wifiConnect "SSID"      : connecting to a wifi network
             wifiDisconnect "SSID"   : disconnecting a wifi network
             wifiTest                : diagnostic connection device (T480) to wireless (wifi)
             netTest "IP"            : diagnostic connection to IP target
