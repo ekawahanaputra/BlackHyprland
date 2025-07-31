@@ -44,7 +44,9 @@ alias btOFF='sudo systemctl stop bluetooth.service'
 
 
 #WIFI
-alias wifiON='nmcli radio wifi on && nmcli device wifi list && nmcli device wifi connect --ask'
+alias wifiON='nmcli radio wifi on && '
+alias wifiScan='nmcli device wifi list'
+alias wifiConnect='nmcli device wifi connect --ask'
 alias wifiOFF='nmcli radio wifi off'
 alias wifiDisconnect='nmcli connection down' #SSID
 alias wifiTest='iw dev wlp3s0 link'

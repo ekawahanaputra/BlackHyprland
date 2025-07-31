@@ -30,8 +30,10 @@ myCommand = '''
 
             # WIFI
             nmtui                   : open network manager UI version
-            wifiON                  : activate wifi, scan wifi & connect to network
+            wifiON                  : activate wifi
             wifiOFF                 : deactivate wifi
+            wifiScan                : scan for the network
+            wifiConnect             : connect to the network
             wifiDisconnect "SSID"   : disconnecting a wifi network
             wifiTest                : diagnostic connection device (T480) to wireless (wifi)
             netTest "IP"            : diagnostic connection to IP target
