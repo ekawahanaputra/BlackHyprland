@@ -34,7 +34,7 @@ myCommand = '''
             wifiOFF                 : deactivate wifi
             wifiScan                : scan for the network
             wifiConnect             : connect to the network
-            wifiDisconnect "SSID"   : disconnecting a wifi network
+            wifiX "SSID"            : disconnecting a wifi network
             wifiTest                : diagnostic connection device (T480) to wireless (wifi)
             netTest "IP"            : diagnostic connection to IP target
             routerCek               : show the router IP Address
@@ -56,6 +56,16 @@ myCommand = '''
 
             # DOWNLOAD
             getYT "links"           : download youtube as mp3
+
+
+            # HUGO
+            createWeb "name_site"   : create a new project web with hugo
+            setHugoTheme "github"   : install theme of web project
+
+
+            # KVM
+            startKVM                : start QEMU - KVM
+            stopKVM                 : stop QEMU - KVM
 
 
             # OTHER

@@ -1,4 +1,3 @@
-i#
 # ~/.bashrc
 #
 
@@ -12,7 +11,8 @@ PS1='\[\e[1;31m\][\u@\h]\[\e[0m\] \[\e[1;37m\]\$\[\e[0m\] '
 #####################################################################
 
 #FASTFETCH
-fastfetch --logo ARCHlabs
+fastfetch --logo ~/.dotfiles/.config/fastfetch/logo/onepieceColors.txt   #Colors Mode
+#fastfetch --logo ~/.dotfiles/.config/fastfetch/logo/onepiece.txt         #No Colors Mode
 echo""
 
 #COMMAND MENU
@@ -44,11 +44,11 @@ alias btOFF='sudo systemctl stop bluetooth.service'
 
 
 #WIFI
-alias wifiON='nmcli radio wifi on && '
+alias wifiON='nmcli radio wifi on'
 alias wifiScan='nmcli device wifi list'
 alias wifiConnect='nmcli device wifi connect --ask'
 alias wifiOFF='nmcli radio wifi off'
-alias wifiDisconnect='nmcli connection down' #SSID
+alias wifiX='nmcli connection down' #SSID
 alias wifiTest='iw dev wlp3s0 link'
 alias netTest='ping -c 5' #IP Address
 alias routerCek='ip route'
@@ -75,6 +75,11 @@ alias getYT='yt-dlp -x --audio-format mp3'
 #HUGO
 alias createWeb='hugo new site' #name_of_site
 alias setHugoTheme='git submodule add' #link_theme_of_github
+
+
+#KVM
+alias startKVM='sudo systemctl start libvirtd'
+alias stopKVM='sudo systemctl stop libvirtd'
 
 
 #OTHER

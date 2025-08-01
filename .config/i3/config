@@ -1,4 +1,6 @@
 set $mod Mod4  
+exec_always --no-startup-id polybar example
+
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
