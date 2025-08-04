@@ -58,11 +58,6 @@ myCommand = '''
             getYT "links"           : download youtube as mp3
 
 
-            # HUGO
-            createWeb "name_site"   : create a new project web with hugo
-            setHugoTheme "github"   : install theme of web project
-
-
             # KVM
             startKVM                : start QEMU - KVM
             stopKVM                 : stop QEMU - KVM

@@ -72,15 +72,14 @@ alias xfreecad='~/.dotfiles/scripts/run_freecad.sh'
 alias getYT='yt-dlp -x --audio-format mp3'
 
 
-#HUGO
-alias createWeb='hugo new site' #name_of_site
-alias setHugoTheme='git submodule add' #link_theme_of_github
-
-
 #KVM
-alias startKVM='sudo systemctl start libvirtd'
-alias stopKVM='sudo systemctl stop libvirtd'
+alias startKVM='sudo systemctl start libvirtd && (sleep 2 && /usr/bin/spice-vdagent &)'
+alias stopKVM='sudo systemctl stop libvirtd libvirtd.socket libvirtd-admin.socket libvirtd-ro.socket'
 
+
+#SAMBA
+alias sambaStart='sudo systemctl start smb nmb'
+alias sambaStop='sudo systemctl stop smb nmb'
 
 #OTHER
 alias run='python main.py'
