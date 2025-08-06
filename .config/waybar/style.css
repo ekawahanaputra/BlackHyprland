@@ -1,13 +1,13 @@
 * {
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 13px;
+  font-size: 15px;
   padding: 0 6px;
 }
 
 window#waybar {
-  background-color: rgba(10, 10, 10, 0.95);
+  background-color: #000000;
   color: #cdd6f4;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 #clock {

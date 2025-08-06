@@ -12,7 +12,6 @@ PS1='\[\e[1;31m\][\u@\h]\[\e[0m\] \[\e[1;37m\]\$\[\e[0m\] '
 
 #FASTFETCH
 fastfetch --logo ~/.dotfiles/.config/fastfetch/logo/onepieceColors.txt   #Colors Mode
-#fastfetch --logo ~/.dotfiles/.config/fastfetch/logo/onepiece.txt         #No Colors Mode
 echo""
 
 #COMMAND MENU
@@ -73,8 +72,14 @@ alias getYT='yt-dlp -x --audio-format mp3'
 
 
 #KVM
-alias startKVM='sudo systemctl start libvirtd && (sleep 2 && /usr/bin/spice-vdagent &)'
-alias stopKVM='sudo systemctl stop libvirtd libvirtd.socket libvirtd-admin.socket libvirtd-ro.socket'
+alias startKVM='sudo systemctl start virtlogd.socket virtlogd-admin.socket virtlogd.service && \
+	sudo systemctl start libvirtd && \
+	(sleep 2 && /usr/bin/spice-vdagent &) && \
+	sudo systemctl start smb nmb'
+
+alias stopKVM='sudo systemctl stop libvirtd libvirtd.socket libvirtd-admin.socket libvirtd-ro.socket && \
+	sudo systemctl stop virtlogd.service virtlogd.socket virtlogd-admin.socket && \
+	sudo systemctl stop smb nmb'
 
 
 #SAMBA
@@ -86,3 +91,10 @@ alias run='python main.py'
 alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
 alias takeFoto='mpv av://v4l2:/dev/video0'
 
+
+
+clear(){
+command clear
+fastfetch --logo ~/.dotfiles/.config/fastfetch/logo/onepieceColors.txt
+echo""
+}
