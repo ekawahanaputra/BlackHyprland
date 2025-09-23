@@ -86,6 +86,11 @@ alias stopKVM='sudo systemctl stop libvirtd libvirtd.socket libvirtd-admin.socke
 alias sambaStart='sudo systemctl start smb nmb'
 alias sambaStop='sudo systemctl stop smb nmb'
 
+
+#MICROPYTHON
+alias eraseFlash='sudo esptool --port /dev/ttyUSB0 erase_flash'
+alias flashBoard='sudo esptool --port /dev/ttyUSB0 --baud 460800 write_flash --flash-size=detect 0'
+
 #OTHER
 alias run='python main.py'
 alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'

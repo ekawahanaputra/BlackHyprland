@@ -63,6 +63,11 @@ myCommand = '''
             stopKVM                 : stop QEMU - KVM
 
 
+            # MICROPYTHON
+            eraseFlash              : erase the firmware
+            flashBoard "file.bin"   : flash the board w/ firmware
+
+
             # OTHER
             setmarket               : to choice the emiten on waybar
             run                     : to run main.py 

@@ -20,5 +20,5 @@ map v paste
 map q quit
 map m %mkdir New_Folder; reload
 map . set hidden!
-map s invert
-map <space> toggle
+map a invert
+map s toggle
