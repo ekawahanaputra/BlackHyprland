@@ -19,4 +19,11 @@ bindsym $mod+x kill
 bindsym $mod+q exit
 
 # BASIC LAYOUT
+for_window [class=".*"] border pixel 1
+new_window pixel 1
+new_float  pixel 1
+
+gaps inner 10
+gaps outer 5
+
 

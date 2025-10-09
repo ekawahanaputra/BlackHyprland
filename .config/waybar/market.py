@@ -3,7 +3,7 @@ from stockModule import*
 import json
 
 #Choice Your Stock !
-stockChoice1 = "PGAS"
+stockChoice1 = "GIAA"
 
 
 

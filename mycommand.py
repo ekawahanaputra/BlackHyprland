@@ -50,10 +50,6 @@ myCommand = '''
             mirrorOFF               : mirroring OFF
 
 
-            # RUN X11 APP
-            xfreecad                : open FreeCAD on xwayland mode
-
-
             # DOWNLOAD
             getYT "links"           : download youtube as mp3
 

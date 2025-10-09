@@ -91,6 +91,7 @@ alias sambaStop='sudo systemctl stop smb nmb'
 alias eraseFlash='sudo esptool --port /dev/ttyUSB0 erase_flash'
 alias flashBoard='sudo esptool --port /dev/ttyUSB0 --baud 460800 write_flash --flash-size=detect 0'
 
+
 #OTHER
 alias run='python main.py'
 alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
