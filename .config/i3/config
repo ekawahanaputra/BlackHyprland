@@ -7,6 +7,7 @@ bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
+bindsym Print exec --no-startup-id maim -s | satty -f - -o ~/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png
 
 # KEYBINDS
 bindsym $mod+a exec kitty
@@ -22,8 +23,10 @@ bindsym $mod+q exit
 for_window [class=".*"] border pixel 1
 new_window pixel 1
 new_float  pixel 1
-
 gaps inner 10
 gaps outer 5
+
+for_window [class="^satty$"] floating enable, move position center
+
 
 
