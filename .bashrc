@@ -92,6 +92,10 @@ alias eraseFlash='sudo esptool --port /dev/ttyUSB0 erase_flash'
 alias flashBoard='sudo esptool --port /dev/ttyUSB0 --baud 460800 write_flash --flash-size=detect 0'
 
 
+#GRUB CONFIG
+alias editGrub='sudo nvim /etc/default/grub'
+alias reloadGrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+
 #OTHER
 alias run='python main.py'
 alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
