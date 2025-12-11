@@ -72,4 +72,13 @@ myCommand = '''
 
             '''
 
-print(myCommand)
+
+
+
+#KEY CODE PRASPHASE for BRAVE SYNC
+#favorite teach one mutual marriage level target elegant pave fiction basic holiday catch cousin excess execute mobile december stuff path one spin modify drop physical
+
+
+
+
+print(myCommand)i

@@ -1,5 +1,5 @@
 
-@theme "/home/blackarch/.config/rofi/themes/niskala.rasi"
+//@theme "/home/blackarch/.config/rofi/themes/niskala.rasi"
 configuration {
 	show-icons: true;
 	}
@@ -44,3 +44,7 @@ element-icon {
 element-text {
 	vertical-align: 0.5;
 	}
+
+//@theme "/home/blacklotus/.config/rofi/themes/niskala.rasi"
+
+@theme "/home/blacklotus/.config/rofi/themes/niskala.rasi"
