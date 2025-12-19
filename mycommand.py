@@ -64,6 +64,10 @@ myCommand = '''
             flashBoard "file.bin"   : flash the board w/ firmware
 
 
+            # MIRROR
+            changeMirror            : edit mirrorlist
+
+
             # OTHER
             setmarket               : to choice the emiten on waybar
             run                     : to run main.py 

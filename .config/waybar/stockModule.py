@@ -1,4 +1,4 @@
-#!/home/blackarch/.dotfiles/.config/waybar/waybarenv/bin/python
+#!/home/blacklotus/.GlobalEnv/bin/python
 
 import yfinance as yf
 

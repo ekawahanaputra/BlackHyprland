@@ -1,4 +1,4 @@
-#!/home/blackarch/.dotfiles/.config/waybar/waybarenv/bin/python
+#!/home/blacklotus/.GlobalEnv/bin/python
 from stockModule import*
 import json
 

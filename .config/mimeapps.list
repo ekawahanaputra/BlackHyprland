@@ -11,6 +11,7 @@ image/png=feh.desktop
 application/pdf=org.pwmt.zathura.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
 audio/mpeg=cmus-mp3.desktop
+x-scheme-handler/webcal=brave-browser.desktop
 
 [Added Associations]
 image/png=imv.desktop;

@@ -96,10 +96,16 @@ alias flashBoard='sudo esptool --port /dev/ttyUSB0 --baud 460800 write_flash --f
 alias editGrub='sudo nvim /etc/default/grub'
 alias reloadGrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
+
+#MIRROR
+alias changeMirror='sudo nvim /etc/pacman.d/mirrorlist'
+
 #OTHER
 alias run='python main.py'
 alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
 alias takeFoto='mpv av://v4l2:/dev/video0'
+
+
 
 
 
