@@ -18,7 +18,7 @@ echo""
 #SYSTEM
 alias mycmd='cd && ./.dotfiles/mycommand.py'
 alias bashrc='sudo nvim ~/.dotfiles/.bashrc'
-alias starth='hyprland'
+alias starth='start-hyprland'
 alias logouth='hyprctl dispatch exit'
 alias confHland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
 alias confi3='sudo nvim ~/.dotfiles/.config/i3/config'
@@ -114,3 +114,10 @@ command clear
 fastfetch --logo ~/.dotfiles/.config/fastfetch/logo/onepieceColors.txt
 echo""
 }
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+#8292929184:AAErfsof527KBnJtni7QvYCPJH0Fj09-LHg     API

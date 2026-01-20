@@ -6,7 +6,7 @@
   "modules-right": ["temperature", "memory", "battery", "network", "tray"],
 
 "custom/market": {
-    "exec":"/home/blackarch/.dotfiles/.config/waybar/market.py",
+    "exec":"/home/blacklotus/.dotfiles/.config/waybar/market.py",
     "interval":60,
     "return-type":"json"
     },
