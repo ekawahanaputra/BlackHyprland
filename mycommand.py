@@ -68,6 +68,10 @@ myCommand = '''
             changeMirror            : edit mirrorlist
 
 
+            # N8N
+            n8nStart                : start n8n
+
+
             # OTHER
             setmarket               : to choice the emiten on waybar
             run                     : to run main.py 

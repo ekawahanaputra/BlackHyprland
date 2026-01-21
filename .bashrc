@@ -100,6 +100,11 @@ alias reloadGrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 #MIRROR
 alias changeMirror='sudo nvim /etc/pacman.d/mirrorlist'
 
+
+#N8N
+alias n8nStart='WEBHOOK_URL=https://b4pu19wuvuhkoqro4wtwtyrh.hooks.n8n.cloud/ n8n start --tunnel'
+
+
 #OTHER
 alias run='python main.py'
 alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
