@@ -1,4 +1,4 @@
-#!/home/blackarch/.GlobalEnv/bin/python
+#!/home/blacklotus/.GlobalEnv/bin/python
 
 myCommand = '''
             # GENERAL
@@ -89,4 +89,4 @@ myCommand = '''
 
 
 
-print(myCommand)i
+print(myCommand)
