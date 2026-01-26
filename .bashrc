@@ -104,6 +104,12 @@ alias changeMirror='sudo nvim /etc/pacman.d/mirrorlist'
 #N8N
 alias n8nStart='WEBHOOK_URL=https://b4pu19wuvuhkoqro4wtwtyrh.hooks.n8n.cloud/ n8n start --tunnel'
 
+#MARIADB, PHPMYADMIN, & METABASE
+alias startDbase='sudo systemctl start mariadb && sudo systemctl start httpd'
+alias stopDbase='sudo systemctl stop mariadb && sudo systemctl stop httpd'
+alias startMetabase='sudo systemctl start metabase'
+alias stopMetabase='sudo systemctl stop metabase'
+
 
 #OTHER
 alias run='python main.py'

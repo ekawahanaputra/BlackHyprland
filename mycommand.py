@@ -72,6 +72,13 @@ myCommand = '''
             n8nStart                : start n8n
 
 
+            # MARIADB, PHPMYADMIN, & METABASE
+            startDbase              : launch mariaDB & PHPmyAdmin
+            stopDbase               : stop mariaDB & PHPmyAdmin
+            startMetabase           : launch metabase
+            stopMetabase            : stop metabase
+
+
             # OTHER
             setmarket               : to choice the emiten on waybar
             run                     : to run main.py 
