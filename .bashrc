@@ -107,17 +107,14 @@ alias n8nStart='WEBHOOK_URL=https://b4pu19wuvuhkoqro4wtwtyrh.hooks.n8n.cloud/ n8
 #MARIADB, PHPMYADMIN, & METABASE
 alias startDbase='sudo systemctl start mariadb && sudo systemctl start httpd'
 alias stopDbase='sudo systemctl stop mariadb && sudo systemctl stop httpd'
-alias startMetabase='sudo systemctl start metabase'
-alias stopMetabase='sudo systemctl stop metabase'
+alias startMetabase='java -jar ~/.dotfiles/.metabase/metabase.jar'
 
 
 #OTHER
 alias run='python main.py'
 alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
 alias takeFoto='mpv av://v4l2:/dev/video0'
-
-
-
+alias setPrinter='system-config-printer'
 
 
 clear(){
