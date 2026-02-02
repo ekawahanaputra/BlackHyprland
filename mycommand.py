@@ -75,12 +75,11 @@ myCommand = '''
             # MARIADB, PHPMYADMIN, & METABASE
             startDbase              : launch mariaDB & PHPmyAdmin
             stopDbase               : stop mariaDB & PHPmyAdmin
-            startMetabase           : launch metabase
-            stopMetabase            : stop metabase
 
 
             # OTHER
             setmarket               : to choice the emiten on waybar
+            venv                    : activate python virtualenv global
             run                     : to run main.py 
             takefoto                : to take a foto with camera
 
