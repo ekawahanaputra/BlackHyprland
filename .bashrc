@@ -42,7 +42,7 @@ alias btON='sudo systemctl start bluetooth.service && bluetuith'
 alias btOFF='sudo systemctl stop bluetooth.service'
 
 
-#WIFI
+#NETWORK
 alias wifiON='nmcli radio wifi on'
 alias wifiScan='nmcli device wifi list'
 alias wifiConnect='nmcli device wifi connect --ask'
@@ -52,6 +52,8 @@ alias wifiTest='iw dev wlp3s0 link'
 alias netTest='ping -c 5' #IP Address
 alias routerCek='ip route'
 alias ispCek='curl ifconfig.me'
+alias setDNS='sudo nvim /etc/resolv.conf'
+alias showDNS='sudo cat /etc/resolv.conf'
 
 
 #SECURITY

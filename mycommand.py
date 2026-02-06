@@ -28,7 +28,7 @@ myCommand = '''
             btOFF                   : power OFF bluetooth
 
 
-            # WIFI
+            # NETWORK
             nmtui                   : open network manager UI version
             wifiON                  : activate wifi
             wifiOFF                 : deactivate wifi
@@ -39,6 +39,8 @@ myCommand = '''
             netTest "IP"            : diagnostic connection to IP target
             routerCek               : show the router IP Address
             ispCek                  : show the ISP IP Address
+            setDNS                  : set or change DNS
+            showDNS                 : show DNS
 
             
             # SECURITY
