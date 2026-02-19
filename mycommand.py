@@ -74,7 +74,7 @@ myCommand = '''
             n8nStart                : start n8n
 
 
-            # MARIADB, PHPMYADMIN, & METABASE
+            # MARIADB, PHPMYADMIN (http://localhost/phpmyadmin)
             startDbase              : launch mariaDB & PHPmyAdmin
             stopDbase               : stop mariaDB & PHPmyAdmin
 
