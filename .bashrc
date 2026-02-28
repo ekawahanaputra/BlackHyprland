@@ -57,7 +57,7 @@ alias showDNS='sudo cat /etc/resolv.conf'
 
 
 #SECURITY
-alias inspect='arch-audit && ps aux --sort=-%mem | head && ss -tunap'
+alias inspect='sudo lynis audit system'
 
 
 #MIRRORING
@@ -103,8 +103,8 @@ alias reloadGrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias changeMirror='sudo nvim /etc/pacman.d/mirrorlist'
 
 
-#N8N
-alias n8nStart='WEBHOOK_URL=https://b4pu19wuvuhkoqro4wtwtyrh.hooks.n8n.cloud/ n8n start --tunnel'
+#FIREWALL
+alias cekFirewall='sudo ufw status verbose'
 
 #MARIADB, PHPMYADMIN, & METABASE
 alias startDbase='sudo systemctl start mariadb && sudo systemctl start httpd'

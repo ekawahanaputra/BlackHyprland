@@ -70,8 +70,8 @@ myCommand = '''
             changeMirror            : edit mirrorlist
 
 
-            # N8N
-            n8nStart                : start n8n
+            # FIREWALL
+            cekFirewall             : cek status for firewall (ufw)
 
 
             # MARIADB, PHPMYADMIN (http://localhost/phpmyadmin)
