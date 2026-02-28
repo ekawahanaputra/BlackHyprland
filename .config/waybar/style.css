@@ -5,9 +5,12 @@
 }
 
 window#waybar {
-  background-color: #111111;
-  color: #cdd6f4;
-  border-radius: 0px;
+  background-color: transparent;
+}
+
+#workspaces button.active {
+    color: #c1c939;
+    font-weight: bold;
 }
 
 #clock {
@@ -16,6 +19,11 @@ window#waybar {
 
 #battery {
   color: #a6e3a1;
+}
+
+#temperature {
+    color: #ab200a;
+    font-weight: bold;
 }
 
 #memory {
