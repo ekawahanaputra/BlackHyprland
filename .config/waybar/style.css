@@ -10,7 +10,6 @@ window#waybar {
 
 #workspaces button.active {
     color: #c1c939;
-    font-weight: bold;
 }
 
 #clock {

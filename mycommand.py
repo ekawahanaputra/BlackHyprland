@@ -39,7 +39,7 @@ myCommand = '''
             netTest "IP"            : diagnostic connection to IP target
             routerCek               : show the router IP Address
             ispCek                  : show the ISP IP Address
-            setDNS                  : set or change DNS
+            setDNS                  : set & change DNS to public
             showDNS                 : show DNS
 
             
@@ -72,11 +72,6 @@ myCommand = '''
 
             # FIREWALL
             cekFirewall             : cek status for firewall (ufw)
-
-
-            # MARIADB, PHPMYADMIN (http://localhost/phpmyadmin)
-            startDbase              : launch mariaDB & PHPmyAdmin
-            stopDbase               : stop mariaDB & PHPmyAdmin
 
 
             # OTHER

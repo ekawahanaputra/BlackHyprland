@@ -52,7 +52,7 @@ alias wifiTest='iw dev wlp3s0 link'
 alias netTest='ping -c 5' #IP Address
 alias routerCek='ip route'
 alias ispCek='curl ifconfig.me'
-alias setDNS='sudo nvim /etc/resolv.conf'
+alias setDNS='echo -e "nameserver 8.8.8.8\nnameserver 1.1.1.1" | sudo tee /etc/resolv.conf'
 alias showDNS='sudo cat /etc/resolv.conf'
 
 
