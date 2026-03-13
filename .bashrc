@@ -33,7 +33,7 @@ alias sdcard='cd /run/media/blackarch/MANDALA'
 
 
 #CLEAN SYSTEM
-alias cleanSystem='sudo pacman -Scc && sudo pacman -Rns $(pacman -Qtdq)'
+alias cleanSystem='rm ~/.bash_history-*.tmp && sudo pacman -Scc && sudo pacman -Rns $(pacman -Qtdq)'
 alias cleanyay='yay -Sc && yay -Scc && yay -Rns $(pacman -Qdtq) && yay -Yc'
 
 
@@ -63,10 +63,6 @@ alias inspect='sudo lynis audit system'
 #MIRRORING
 alias mirror='xrandr --output HDMI-2 --same-as eDP-1 --mode 1920x1080'
 alias mirrorOFF='xrandr --output HDMI-2 --off'
-
-
-#RUN X11 APP
-alias xfreecad='~/.dotfiles/scripts/run_freecad.sh'
 
 
 #DOWNLOAD
