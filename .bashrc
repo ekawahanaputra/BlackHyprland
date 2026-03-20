@@ -108,6 +108,9 @@ alias stopDbase='sudo systemctl stop mariadb && sudo systemctl stop httpd'
 alias startMetabase='java -jar ~/.dotfiles/.metabase/metabase.jar'
 
 
+#SERVER
+alias connectServer='ssh whitelotus@192.168.122.240'
+
 #OTHER
 alias run='python main.py'
 alias venv='source .GlobalEnv/bin/activate'

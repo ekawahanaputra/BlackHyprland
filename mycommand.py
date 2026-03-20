@@ -74,6 +74,10 @@ myCommand = '''
             cekFirewall             : cek status for firewall (ufw)
 
 
+            # SERVER
+            connectServer           : connect to Ubuntu Server on VM
+
+
             # OTHER
             setmarket               : to choice the emiten on waybar
             venv                    : activate python virtualenv global
