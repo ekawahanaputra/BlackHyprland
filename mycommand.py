@@ -50,6 +50,7 @@ myCommand = '''
             # MIRRORING
             mirror                  : mirroring to external display
             mirrorOFF               : mirroring OFF
+            connectMyPhone          : mirroring my smartphone on device via scrcpy
 
 
             # DOWNLOAD
@@ -76,6 +77,7 @@ myCommand = '''
 
             # SERVER
             connectServer           : connect to Ubuntu Server on VM
+            connectTermux           : connect to termux on smartphone via ssh
 
 
             # OTHER

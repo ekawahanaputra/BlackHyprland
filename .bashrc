@@ -63,6 +63,7 @@ alias inspect='sudo lynis audit system'
 #MIRRORING
 alias mirror='xrandr --output HDMI-2 --same-as eDP-1 --mode 1920x1080'
 alias mirrorOFF='xrandr --output HDMI-2 --off'
+alias connectMyPhone='scrcpy --tcpip=10.224.199.18:5555 --turn-screen-off --stay-awake'
 
 
 #DOWNLOAD
@@ -110,6 +111,9 @@ alias startMetabase='java -jar ~/.dotfiles/.metabase/metabase.jar'
 
 #SERVER
 alias connectServer='ssh whitelotus@192.168.122.240'
+connectTermux(){
+	ssh u0_a744@$1 -p 8022
+}
 
 #OTHER
 alias run='python main.py'
