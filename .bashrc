@@ -66,6 +66,11 @@ alias mirrorOFF='xrandr --output HDMI-2 --off'
 alias connectMyPhone='scrcpy --tcpip=10.224.199.18:5555 --turn-screen-off --stay-awake'
 
 
+#TAILSCALE
+alias startTailscale='sudo systemctl start tailscaled && sudo tailscale up'
+alias stopTailscale='sudo tailscale down && sudo systemctl stop tailscaled'
+
+
 #DOWNLOAD
 alias getYT='yt-dlp -x --audio-format mp3'
 
@@ -103,17 +108,21 @@ alias changeMirror='sudo nvim /etc/pacman.d/mirrorlist'
 #FIREWALL
 alias cekFirewall='sudo ufw status verbose'
 
-#MARIADB, PHPMYADMIN, & METABASE
-alias startDbase='sudo systemctl start mariadb && sudo systemctl start httpd'
-alias stopDbase='sudo systemctl stop mariadb && sudo systemctl stop httpd'
-alias startMetabase='java -jar ~/.dotfiles/.metabase/metabase.jar'
-
 
 #SERVER
 alias connectServer='ssh whitelotus@192.168.122.240'
-connectTermux(){
-	ssh u0_a744@$1 -p 8022
+
+
+#TERMUX
+alias connectTermux='ssh u0_a744@10.224.199.18 -p 8022'
+sendFile(){
+	scp -P 8022 $1 u0_a744@10.224.199.18:~/storage/SSH_TERMUX
 }
+getFile(){
+	scp -P 8022 u0_a744@10.224.199.18:~/storage/SSH_TERMUX/$1 ~/Downloads
+}
+
+
 
 #OTHER
 alias run='python main.py'
@@ -121,6 +130,7 @@ alias venv='source .GlobalEnv/bin/activate'
 alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
 alias takeFoto='mpv av://v4l2:/dev/video0'
 alias setPrinter='system-config-printer'
+alias cekGPU='sudo intel_gpu_top'
 
 
 clear(){
@@ -130,3 +140,4 @@ echo""
 }
 
 
+export EDITOR=nvim
