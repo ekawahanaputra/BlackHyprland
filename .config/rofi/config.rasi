@@ -1,7 +1,9 @@
-
 //@theme "/home/blackarch/.config/rofi/themes/niskala.rasi"
+@theme "/home/blacklotus/.config/rofi/themes/niskala.rasi"
+
+
 configuration {
-	show-icons: true;
+	show-icons: false;
 	}
 
 * {
@@ -12,7 +14,10 @@ configuration {
 window {
 	padding: 10px;
 	width: 30%;
-	location: center;
+	location: west;
+    anchor: west;
+    x-offset: 100px;
+    y-offset: 0;
 	}
 
 mainbox {
@@ -27,7 +32,7 @@ inputbar {
 
 listview {
 	fixed-height: true;
-	spacing: 10px;
+	spacing: 5px;
 	scrollbar: true;
 	lines: 5;
 	}
@@ -47,4 +52,4 @@ element-text {
 
 //@theme "/home/blacklotus/.config/rofi/themes/niskala.rasi"
 
-@theme "/home/blacklotus/.config/rofi/themes/niskala.rasi"
+

@@ -54,6 +54,8 @@ alias routerCek='ip route'
 alias ispCek='curl ifconfig.me'
 alias setDNS='echo -e "nameserver 8.8.8.8\nnameserver 1.1.1.1" | sudo tee /etc/resolv.conf'
 alias showDNS='sudo cat /etc/resolv.conf'
+alias setDNS_Proxy='sudo systemctl start dnscrypt-proxy && echo -e "nameserver 127.0.0.1\noptions edns0" | sudo tee /etc/resolv.conf'
+alias stopDNS_Proxy='sudo systemctl stop dnscrypt-proxy && sudo systemctl restart NetworkManager'
 
 
 #SECURITY

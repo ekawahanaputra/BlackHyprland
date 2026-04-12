@@ -41,6 +41,8 @@ myCommand = '''
             ispCek                      : show the ISP IP Address
             setDNS                      : set & change DNS to public
             showDNS                     : show DNS
+            setDNS_Proxy                : start & set dns proxy for privat access
+            stopDNS_Proxy               : stop dns proxy & restart network to default
 
             
             # SECURITY
