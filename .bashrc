@@ -33,7 +33,7 @@ alias sdcard='cd /run/media/blackarch/MANDALA'
 
 
 #CLEAN SYSTEM
-alias cleanSystem='rm ~/.bash_history-*.tmp && sudo pacman -Scc && sudo pacman -Rns $(pacman -Qtdq)'
+alias cleanSystem='sudo paccache -r && sudo pacman -Rns $(pacman -Qtdq) && sudo pacman -Scc && rm ~/.bash_history-*.tmp'
 alias cleanyay='yay -Sc && yay -Scc && yay -Rns $(pacman -Qdtq) && yay -Yc'
 
 
