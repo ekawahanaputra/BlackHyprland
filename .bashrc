@@ -20,8 +20,11 @@ alias mycmd='cd && ./.dotfiles/mycommand.py'
 alias bashrc='sudo nvim ~/.dotfiles/.bashrc'
 alias starth='start-hyprland'
 alias logouth='hyprctl dispatch exit'
-alias confHland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
-alias confi3='sudo nvim ~/.dotfiles/.config/i3/config'
+alias setHland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
+alias set_i3='sudo nvim ~/.dotfiles/.config/i3/config'
+alias set_mycmd='nvim ~/.dotfiles/mycommand.py'
+alias reloadBash='source ~/.bashrc'
+alias dotfiles='cd ~/.dotfiles'
 
 
 #EXTERNAL STORAGE
@@ -33,8 +36,9 @@ alias sdcard='cd /run/media/blackarch/MANDALA'
 
 
 #CLEAN SYSTEM
-alias cleanSystem='sudo paccache -r && sudo pacman -Rns $(pacman -Qtdq) && sudo pacman -Scc && rm ~/.bash_history-*.tmp'
-alias cleanyay='yay -Sc && yay -Scc && yay -Rns $(pacman -Qdtq) && yay -Yc'
+alias cleanSystem='sudo pacman -Rns $(pacman -Qtdq) && sudo pacman -Scc && rm ~/.bash_history-*.tmp'
+alias cleanCache='sudo paccache -r && yay -Sc && yay -Scc'
+alias cleanyay='yay -Rns $(pacman -Qdtq) && yay -Yc'
 
 
 #BLUETOOTH
@@ -113,17 +117,6 @@ alias cekFirewall='sudo ufw status verbose'
 
 #SERVER
 alias connectServer='ssh whitelotus@192.168.122.240'
-
-
-#TERMUX
-alias connectTermux='ssh u0_a744@10.224.199.18 -p 8022'
-sendFile(){
-	scp -P 8022 $1 u0_a744@10.224.199.18:~/storage/SSH_TERMUX
-}
-getFile(){
-	scp -P 8022 u0_a744@10.224.199.18:~/storage/SSH_TERMUX/$1 ~/Downloads
-}
-
 
 
 #OTHER

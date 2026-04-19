@@ -6,8 +6,11 @@ myCommand = '''
             starth                      : entry to Hyprland (on TTY only)
             startx                      : entry to i3 (on TTY only)
             logouth                     : restart Hyprland (back to TTY)
-            confHland                   : to configure Hyprland
-            confi3                      : to configure i3
+            setHland                    : to configure Hyprland
+            set_i3                      : to configure i3
+            set_mycmd                   : configure command alias instruction
+            reloadBash                  : reload bashrc
+            dotfiles                    : go to dotfiles directory
 
 
             # EXTERNAL STORAGE
@@ -20,6 +23,7 @@ myCommand = '''
 
             # CLEAN SYSTEM
             cleanSystem                 : to clean pacman package
+            cleanCache                  : to clean cache
             cleanyay                    : to clean yay package
 
 
@@ -33,16 +37,19 @@ myCommand = '''
             wifiON                      : activate wifi
             wifiOFF                     : deactivate wifi
             wifiScan                    : scan for the network
-            wifiConnect                 : connect to the network
+            wifiConnect "SSID"          : connect to the network
             wifiX "SSID"                : disconnecting a wifi network
             wifiTest                    : diagnostic connection device (T480) to wireless (wifi)
             netTest "IP"                : diagnostic connection to IP target
             routerCek                   : show the router IP Address
             ispCek                      : show the ISP IP Address
-            setDNS                      : set & change DNS to public
+            setDNS_Public               : set & change DNS to public
             showDNS                     : show DNS
             setDNS_Proxy                : start & set dns proxy for privat access
             stopDNS_Proxy               : stop dns proxy & restart network to default
+            protonvpn signin "USER"     : login to protonvpn via cli 
+            protonvpn connect           : connect to protonvpn
+            protonvpn disconnect        : disconnect protonvpn
 
             
             # SECURITY
@@ -50,7 +57,7 @@ myCommand = '''
 
 
             # MIRRORING
-            mirror                      : mirroring to external display
+            mirror                      : mirroring to external display via HDMI
             mirrorOFF                   : mirroring OFF
             connectMyPhone              : mirroring my smartphone on device via scrcpy
 
@@ -74,8 +81,13 @@ myCommand = '''
             flashBoard "file.bin"       : flash the board w/ firmware
 
 
-            # MIRROR
-            changeMirror                : edit mirrorlist
+            # GRUB CONFIG
+            editGrub                    : edit grub
+            reloadGrub                  : reload grub
+
+
+            # MIRROR REPOSITORY
+            changeMirror                : edit mirrorlist for repository
 
 
             # FIREWALL
@@ -86,23 +98,20 @@ myCommand = '''
             connectServer               : connect to Ubuntu Server on VM
 
 
-            # TERMUX
-            connectTermux               : connect to termux on smartphone via ssh
-            sendFile                    : send file from device(t480) to smartphone via termux
-            getFile                     : get file from smartphone to device via termux
-
-
             # BITWARDEN
             rbw add [URL] [Username]    : add database password to bitwarden local
             rbw synsc                   : sync local password manager to bitwarden server
+            rbw edit [NAME]             : edit password
+            rbw get [NAME]              : show password
 
 
             # OTHER
             setmarket                   : to choice the emiten on waybar
             venv                        : activate python virtualenv global
             run                         : to run main.py 
-            takefoto                    : to take a foto with camera
+            takeFoto                    : to take a foto with camera
             cekGPU                      : show GPU Performance
+            setPrinter                  : setting the printer
 
 
             '''
