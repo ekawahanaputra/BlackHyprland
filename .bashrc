@@ -16,15 +16,14 @@ echo""
 
 #COMMAND MENU
 #SYSTEM
-alias mycmd='cd && ./.dotfiles/mycommand.py'
 alias bashrc='sudo nvim ~/.dotfiles/.bashrc'
 alias starth='start-hyprland'
 alias logouth='hyprctl dispatch exit'
 alias setHland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
 alias set_i3='sudo nvim ~/.dotfiles/.config/i3/config'
-alias set_mycmd='nvim ~/.dotfiles/mycommand.py'
 alias reloadBash='source ~/.bashrc'
 alias dotfiles='cd ~/.dotfiles'
+alias setWaybar='nvim ~/.dotfiles/.config/waybar/config'
 
 
 #EXTERNAL STORAGE
@@ -36,7 +35,8 @@ alias sdcard='cd /run/media/blackarch/MANDALA'
 
 
 #CLEAN SYSTEM
-alias cleanSystem='sudo pacman -Rns $(pacman -Qtdq) && sudo pacman -Scc && rm ~/.bash_history-*.tmp'
+alias cleanBash='rm -rf ~/.bash_history-*.tmp'
+alias cleanSystem='sudo pacman -Rns $(pacman -Qtdq) && sudo pacman -Scc'
 alias cleanCache='sudo paccache -r && yay -Sc && yay -Scc'
 alias cleanyay='yay -Rns $(pacman -Qdtq) && yay -Yc'
 
@@ -116,7 +116,7 @@ alias cekFirewall='sudo ufw status verbose'
 
 
 #SERVER
-alias connectServer='ssh whitelotus@192.168.122.240'
+alias connectServer='ssh a2000_bwi@100.69.47.34'
 
 
 #OTHER
@@ -126,6 +126,7 @@ alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
 alias takeFoto='mpv av://v4l2:/dev/video0'
 alias setPrinter='system-config-printer'
 alias cekGPU='sudo intel_gpu_top'
+alias mycmd='alias | fzf'
 
 
 clear(){
