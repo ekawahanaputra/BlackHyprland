@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["hyprland/workspaces", "clock"],
+  "modules-left": ["sway/workspaces", "clock"],
   "modules-center": ["custom/market"],
   "modules-right": ["network#vpn", "temperature", "memory", "battery", "network", "tray"],
 

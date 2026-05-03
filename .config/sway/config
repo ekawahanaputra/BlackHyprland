@@ -1,0 +1,98 @@
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+#Initial Variable
+set $mod Mod4
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+set $gnome-schema org.gnome.desktop.interface
+exec_always gsettings set $gnome-schema gtk-theme 'catppuccin-mocha-red-standard+default'
+
+
+# MONITOR & PERFORMANCE
+output * mode 1920x1080@60Hz
+
+
+#AUTOSTART APP
+exec awww-daemon
+exec waybar
+exec nmcli radio all off
+exec dunst
+exec xsettingsd
+exec swayidle -w \
+    timeout 600 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    timeout 1200 'systemctl suspend' \
+    before-sleep 'swaymsg "output * dpms off"'
+
+
+#INPUT & TOUCHPAD
+input "type:keyboard" {
+    xkb_layout us
+}
+input "type:touchpad" {
+    tap enabled
+    natural_scroll enabled
+    pointer_accel 0.1
+    accel_profile flat
+}
+
+
+#TILLING & APPEARANCE
+default_border pixel 2
+gaps inner 5
+gaps outer 15
+smart_borders on
+client.focused #111111 #111111 #ffffff #111111 #111111
+client.focused_inactive #111111 #111111 #ffffff #111111 #111111
+
+
+#Keybinds
+bindsym $mod+a exec kitty
+bindsym $mod+l exec kitty -e lf
+bindsym $mod+d exec rofi -show drun
+bindsym $mod+f exec thunar
+bindsym $mod+w exec rofi-rbw --selector rofi
+
+
+#WINDOW MANAGEMENT
+bindsym $mod+x kill
+bindsym $mod+up fullscreen toggle
+bindsym $mod+down floating toggle
+
+
+# WORKSPACE MANAGEMENT
+bindsym $mod+1 workspace number 1; exec awww img /home/blacklotus/.config/sway/wallpapers/E30.jpg
+bindsym $mod+2 workspace number 2; exec awww img /home/blacklotus/.config/sway/wallpapers/JEEP.jpg
+bindsym $mod+3 workspace number 3; exec awww img /home/blacklotus/.config/sway/wallpapers/E30.jpg
+bindsym $mod+4 workspace number 4; exec awww img /home/blacklotus/.config/sway/wallpapers/JEEP.jpg
+bindsym $mod+5 workspace number 5; exec awww img /home/blacklotus/.config/sway/wallpapers/E30.jpg
+
+
+# MOVE TO WORKSPACE
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+
+
+# BRIGHTNESS CONTROL
+bindsym XF86MonBrightnessUp exec brightnessctl set +10% && notify-send "Brightness" "$(($(brightnessctl g) * 100 / $(brightnessctl m)))%"
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%- && notify-send "Brightness" "$(($(brightnessctl g) * 100 / $(brightnessctl m)))%"
+
+
+# VOLUME CONTROL
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% && notify-send "Volume" "$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | head -1)"
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% && notify-send "Volume" "$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | head -1)"
+
+
+# SCREENSHOOT
+bindsym Print exec sh -c 'mkdir -p ~/Pictures && file=~/Pictures/sc_$(date +%s).png && grim -g "$(slurp)" "$file" && satty --filename "$file" --output-filename "$file"'
+
+
+# RESIZE WINDOWS
+floating_modifier $mod
+
+
+# AUTOTILING
+exec autotiling

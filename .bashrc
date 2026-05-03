@@ -17,11 +17,12 @@ echo""
 #COMMAND MENU
 #SYSTEM
 alias bashrc='sudo nvim ~/.dotfiles/.bashrc'
-alias starth='start-hyprland'
-alias logouth='hyprctl dispatch exit'
-alias setHland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
+alias starts='sway'
+alias logout='swaymsg exit'
 alias set_i3='sudo nvim ~/.dotfiles/.config/i3/config'
+alias setSway='sudo nvim ~/.dotfiles/.config/sway/config'
 alias reloadBash='source ~/.bashrc'
+alias reloadSway='swaymsg reload'
 alias dotfiles='cd ~/.dotfiles'
 alias setWaybar='nvim ~/.dotfiles/.config/waybar/config'
 
@@ -84,17 +85,11 @@ alias getYT='yt-dlp -x --audio-format mp3'
 #KVM
 alias startKVM='sudo systemctl start virtlogd.socket virtlogd-admin.socket virtlogd.service && \
 	sudo systemctl start libvirtd && \
-	(sleep 2 && /usr/bin/spice-vdagent &) && \
-	sudo systemctl start smb nmb'
+	(sleep 2 && /usr/bin/spice-vdagent &)'
 
 alias stopKVM='sudo systemctl stop libvirtd libvirtd.socket libvirtd-admin.socket libvirtd-ro.socket && \
-	sudo systemctl stop virtlogd.service virtlogd.socket virtlogd-admin.socket && \
-	sudo systemctl stop smb nmb'
-
-
-#SAMBA
-alias sambaStart='sudo systemctl start smb nmb'
-alias sambaStop='sudo systemctl stop smb nmb'
+	sudo systemctl stop virtlogd.service virtlogd.socket virtlogd-admin.socket'
+alias kali='ssh -X kali@192.168.122.50'
 
 
 #MICROPYTHON
