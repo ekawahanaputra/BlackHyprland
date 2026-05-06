@@ -60,11 +60,11 @@ bindsym $mod+down floating toggle
 
 
 # WORKSPACE MANAGEMENT
-bindsym $mod+1 workspace number 1; exec awww img /home/blacklotus/.config/sway/wallpapers/E30.jpg
-bindsym $mod+2 workspace number 2; exec awww img /home/blacklotus/.config/sway/wallpapers/JEEP.jpg
-bindsym $mod+3 workspace number 3; exec awww img /home/blacklotus/.config/sway/wallpapers/E30.jpg
-bindsym $mod+4 workspace number 4; exec awww img /home/blacklotus/.config/sway/wallpapers/JEEP.jpg
-bindsym $mod+5 workspace number 5; exec awww img /home/blacklotus/.config/sway/wallpapers/E30.jpg
+bindsym $mod+1 workspace number 1; exec awww img /home/blacklotus/.config/sway/wallpapers/Arch.png
+bindsym $mod+2 workspace number 2; exec awww img /home/blacklotus/.config/sway/wallpapers/Ninja_Girl.jpg
+bindsym $mod+3 workspace number 3; exec awww img /home/blacklotus/.config/sway/wallpapers/Kanji.png
+bindsym $mod+4 workspace number 4; exec awww img /home/blacklotus/.config/sway/wallpapers/Venom.jpg
+bindsym $mod+5 workspace number 5; exec awww img /home/blacklotus/.config/sway/wallpapers/Sexy_Girl.jpg
 
 
 # MOVE TO WORKSPACE

@@ -16,8 +16,12 @@ window#waybar {
   color: #fab387;
 }
 
-#battery {
+#battery.internal {
   color: #a6e3a1;
+}
+
+#battery.external {
+  color: #f2f0f0;
 }
 
 #temperature {

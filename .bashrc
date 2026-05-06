@@ -21,10 +21,12 @@ alias starts='sway'
 alias logout='swaymsg exit'
 alias set_i3='sudo nvim ~/.dotfiles/.config/i3/config'
 alias setSway='sudo nvim ~/.dotfiles/.config/sway/config'
+alias setKitty='nvim ~/.dotfiles/.config/kitty/kitty.conf'
 alias reloadBash='source ~/.bashrc'
 alias reloadSway='swaymsg reload'
 alias dotfiles='cd ~/.dotfiles'
 alias setWaybar='nvim ~/.dotfiles/.config/waybar/config'
+alias checkBattery='sudo tlp-stat -b'
 
 
 #EXTERNAL STORAGE
@@ -132,4 +134,5 @@ echo""
 
 
 export EDITOR=nvim
+export MOZ_ENABLE_WAYLAND=1
 eval "$(starship init bash)"

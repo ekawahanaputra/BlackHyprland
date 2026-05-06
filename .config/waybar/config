@@ -3,7 +3,7 @@
   "position": "top",
   "modules-left": ["sway/workspaces", "clock"],
   "modules-center": ["custom/market"],
-  "modules-right": ["network#vpn", "temperature", "memory", "battery", "network", "tray"],
+  "modules-right": ["network#vpn", "temperature", "memory", "battery#internal", "battery#external", "network", "tray"],
 
 "custom/market": {
     "exec":"/home/blacklotus/.dotfiles/.config/waybar/market.py",
@@ -17,8 +17,15 @@
     "interval": 1
     },
 
-"battery": {
-    "format": "{capacity}% {icon}",
+"battery#internal": {
+    "bat": "BAT0",
+    "format": "I: {capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+"battery#external": {
+    "bat": "BAT1",
+    "format": "E: {capacity}% {icon}",
     "format-icons": ["", "", "", "", ""]
   },
 
