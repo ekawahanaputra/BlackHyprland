@@ -135,4 +135,3 @@ echo""
 
 export EDITOR=nvim
 export MOZ_ENABLE_WAYLAND=1
-eval "$(starship init bash)"
