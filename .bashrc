@@ -6,8 +6,8 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='\[\e[1;31m\][\u@\h]\[\e[0m\] \[\e[1;37m\]\$\[\e[0m\] '
 
+PS1='\[\e[1;31m\][\u@\h] \[\e[1;34m\]\w\[\e[0m\]\n\[\e[1;37m\]\$\[\e[0m\] '
 #####################################################################
 
 #FASTFETCH
@@ -84,7 +84,7 @@ alias stopTailscale='sudo tailscale down && sudo systemctl stop tailscaled'
 alias getYT='yt-dlp -x --audio-format mp3'
 
 
-#KVM
+#VIRTUALISATION
 alias startKVM='sudo systemctl start virtlogd.socket virtlogd-admin.socket virtlogd.service && \
 	sudo systemctl start libvirtd && \
 	(sleep 2 && /usr/bin/spice-vdagent &)'
@@ -92,6 +92,7 @@ alias startKVM='sudo systemctl start virtlogd.socket virtlogd-admin.socket virtl
 alias stopKVM='sudo systemctl stop libvirtd libvirtd.socket libvirtd-admin.socket libvirtd-ro.socket && \
 	sudo systemctl stop virtlogd.service virtlogd.socket virtlogd-admin.socket'
 alias kali='ssh -X kali@192.168.122.50'
+
 
 
 #MICROPYTHON

@@ -11,6 +11,10 @@ exec_always gsettings set $gnome-schema gtk-theme 'catppuccin-mocha-red-standard
 output * mode 1920x1080@60Hz
 
 
+# WINDOWRULE
+for_window [app_id="waydroid"] floating enable
+
+
 #AUTOSTART APP
 exec awww-daemon
 exec awww img /home/blacklotus/.config/sway/wallpapers/Ninja_Girl.jpg
