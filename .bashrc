@@ -124,7 +124,6 @@ alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
 alias takeFoto='mpv av://v4l2:/dev/video0'
 alias setPrinter='system-config-printer'
 alias cekGPU='sudo intel_gpu_top'
-alias mycmd='alias | fzf'
 
 
 clear(){

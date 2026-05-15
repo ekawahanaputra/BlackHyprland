@@ -55,7 +55,6 @@ bindsym $mod+a exec kitty
 bindsym $mod+l exec kitty -e lf
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+f exec thunar
-bindsym $mod+w exec rofi-rbw --selector rofi
 
 
 #WINDOW MANAGEMENT
