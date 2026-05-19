@@ -1,0 +1,42 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+	  "type": "kitty-icat",
+	  "source": "~/.dotfiles/.config/fastfetch/logo/*.png",
+	  "width": 40,
+      "height": 21,
+      "preserveAspectRatio":true,
+      "padding": {
+          "top":0,
+          "right": 5
+      }
+  	
+  },
+
+
+
+
+
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "wm",
+    "terminal",
+    "cpu",
+    "gpu",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
+}
