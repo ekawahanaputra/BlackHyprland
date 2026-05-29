@@ -74,7 +74,6 @@ alias inspect='sudo lynis audit system'
 #MIRRORING
 alias mirror='xrandr --output HDMI-2 --same-as eDP-1 --mode 1920x1080'
 alias mirrorOFF='xrandr --output HDMI-2 --off'
-alias connectMyPhone='scrcpy --tcpip=10.224.199.18:5555 --turn-screen-off --stay-awake'
 
 
 #TAILSCALE
@@ -131,7 +130,7 @@ alias cekGPU='sudo intel_gpu_top'
 clear(){
 command clear
 fastfetch
-echo""
+#echo""
 }
 
 
