@@ -17,7 +17,6 @@ echo""
 #COMMAND MENU
 #SYSTEM
 alias bashrc='sudo nvim ~/.dotfiles/.bashrc'
-alias starts='sway'
 alias logout='swaymsg exit'
 alias set_i3='sudo nvim ~/.dotfiles/.config/i3/config'
 alias setSway='sudo nvim ~/.dotfiles/.config/sway/config'
@@ -30,10 +29,7 @@ alias checkBattery='sudo tlp-stat -b'
 
 
 #EXTERNAL STORAGE
-alias mountusb='udisksctl mount -b /dev/sdc1'
-alias ejectusb='udisksctl unmount -b /dev/sdc1'
 alias usb='cd /run/media/blackarch'
-alias mountsdcard='udisksctl mount -b /dev/sdb1'
 alias sdcard='cd /run/media/blackarch/MANDALA'
 
 
@@ -95,18 +91,12 @@ alias stopKVM='sudo systemctl stop libvirtd libvirtd.socket libvirtd-admin.socke
 alias kali='ssh -X kali@192.168.122.50'
 
 
-
-#MICROPYTHON
-alias eraseFlash='sudo esptool --port /dev/ttyUSB0 erase_flash'
-alias flashBoard='sudo esptool --port /dev/ttyUSB0 --baud 460800 write_flash --flash-size=detect 0'
-
-
 #GRUB CONFIG
 alias editGrub='sudo nvim /etc/default/grub'
 alias reloadGrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 
-#MIRROR
+#MIRROR REPOSITORY
 alias changeMirror='sudo nvim /etc/pacman.d/mirrorlist'
 
 
@@ -129,7 +119,7 @@ alias cekGPU='sudo intel_gpu_top'
 
 clear(){
 command clear
-fastfetch
+fastfetch --kitty-icat ~/.dotfiles/.config/fastfetch/logo/Me.png --logo-width 42
 #echo""
 }
 
