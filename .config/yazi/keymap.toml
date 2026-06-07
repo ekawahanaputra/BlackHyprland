@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on = [ "c" ]
+run = '''shell 'wl-copy < "$@"' --confirm'''
+desc = "Copy file to system clipboard"

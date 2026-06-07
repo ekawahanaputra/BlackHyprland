@@ -49,7 +49,6 @@ client.focused_inactive #111111 #111111 #ffffff #111111 #111111
 #Keybinds
 bindsym $mod+a exec kitty
 bindsym $mod+d exec rofi -show drun
-bindsym $mod+f exec thunar
 bindsym $mod+y exec kitty -e yazi
 
 
