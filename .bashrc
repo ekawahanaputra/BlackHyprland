@@ -12,7 +12,6 @@ PS1='\[\e[1;31m\][\u@\h] \[\e[1;34m\]\w\[\e[0m\]\n\[\e[1;37m\]\$\[\e[0m\] '
 
 #FASTFETCH
 fastfetch
-echo""
 
 #COMMAND MENU
 #SYSTEM
@@ -119,8 +118,7 @@ alias cekGPU='sudo intel_gpu_top'
 
 clear(){
 command clear
-fastfetch --kitty-icat ~/.dotfiles/.config/fastfetch/logo/Me.png --logo-width 42
-#echo""
+fastfetch --kitty-icat ~/.dotfiles/.config/fastfetch/logo/Me.png --logo-width 40
 }
 
 
