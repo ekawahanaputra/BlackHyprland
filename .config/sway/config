@@ -13,7 +13,7 @@ output * mode 1920x1080@60Hz
 
 #AUTOSTART APP
 exec awww-daemon
-exec awww img /home/blacklotus/.config/sway/wallpapers/Ninja_Girl.jpg
+exec awww img /home/blacklotus/.config/sway/wallpapers/Svastika.png
 exec waybar
 exec nmcli radio all off
 exec dunst
@@ -48,6 +48,7 @@ client.focused_inactive #111111 #111111 #ffffff #111111 #111111
 
 #Keybinds
 bindsym $mod+a exec kitty
+bindsym $mod+f exec foot
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+y exec kitty -e yazi
 

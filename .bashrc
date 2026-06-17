@@ -116,10 +116,8 @@ alias setPrinter='system-config-printer'
 alias cekGPU='sudo intel_gpu_top'
 
 
-clear(){
-command clear
-fastfetch --kitty-icat ~/.dotfiles/.config/fastfetch/logo/Me.png --logo-width 55
-}
+#PATH for FLUTTER
+export PATH="$PATH:$HOME/.MySoftware/flutter/bin"
 
 
 export EDITOR=nvim
