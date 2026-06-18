@@ -113,7 +113,7 @@ alias testSSD='sudo smartctl -A /dev/sda'
 
 #OTHER
 alias run='python main.py'
-alias venv='source .GlobalEnv/bin/activate'
+alias venv='source ~/.GlobalEnv/bin/activate'
 alias setMarket='nvim ~/.dotfiles/.config/waybar/market.py'
 alias takeFoto='mpv av://v4l2:/dev/video0'
 alias setPrinter='system-config-printer'
