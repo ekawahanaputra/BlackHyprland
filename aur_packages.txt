@@ -1,0 +1,10 @@
+auto-cpufreq
+bluetuith
+bridge-utils
+catppuccin-gtk-theme-mocha
+fprintd-clients-git
+nordic-theme
+open-fprintd
+python-validity
+ttf-ms-fonts
+yay

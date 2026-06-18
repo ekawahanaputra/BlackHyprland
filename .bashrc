@@ -107,6 +107,10 @@ alias cekFirewall='sudo ufw status verbose'
 alias connectServer='ssh a2000_bwi@100.69.47.34'
 
 
+#REPAIR & MAINTENANCE
+alias testSSD='sudo smartctl -A /dev/sda'
+
+
 #OTHER
 alias run='python main.py'
 alias venv='source .GlobalEnv/bin/activate'
