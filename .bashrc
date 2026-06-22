@@ -32,6 +32,8 @@ alias checkBattery='sudo tlp-stat -b'
 #EXTERNAL STORAGE
 alias usb='cd /run/media/blackarch'
 alias sdcard='cd /run/media/blackarch/MANDALA'
+alias mountSD_Card='sudo udisksctl mount -b /dev/sdb1'
+alias ejectSD_Card='sudo power-off -b /dev/sdb'
 
 
 #CLEAN SYSTEM
