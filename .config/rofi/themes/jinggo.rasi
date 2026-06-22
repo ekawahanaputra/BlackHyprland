@@ -1,0 +1,11 @@
+* {
+    /* Palet Warna */
+    bg-primary:     #1a1617ff; /* Latar belakang gelap dengan tint merah muda */
+    bg-secondary:   #2d2224ff; /* Latar belakang panel list */
+    accent-color:   #d85f72ff; /* Warna pink/merah khas tema */
+    fg-normal:      #ffffff; /* Warna teks utama */
+    fg-muted:       #a39395ff; /* Warna teks redup */
+    
+    /* Font */
+    font: "JetBrainsMono Nerd Font 10";
+}

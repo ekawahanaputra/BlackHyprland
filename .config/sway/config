@@ -75,6 +75,13 @@ bindsym $mod+Shift+4 move container to workspace number 4
 bindsym $mod+Shift+5 move container to workspace number 5
 
 
+# MOVE FOCUS
+bindsym $mod+Shift+Left focus left
+bindsym $mod+Shift+Right focus right
+bindsym $mod+Shift+Up focus up
+bindsym $mod+Shift+Down focus down
+
+
 # BRIGHTNESS CONTROL
 bindsym XF86MonBrightnessUp exec brightnessctl set +10% && notify-send "Brightness" "$(($(brightnessctl g) * 100 / $(brightnessctl m)))%"
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%- && notify-send "Brightness" "$(($(brightnessctl g) * 100 / $(brightnessctl m)))%"

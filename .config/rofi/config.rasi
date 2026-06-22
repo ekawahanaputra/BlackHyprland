@@ -1,55 +1,136 @@
-//@theme "/home/blackarch/.config/rofi/themes/niskala.rasi"
-@theme "/home/blacklotus/.config/rofi/themes/niskala.rasi"
-
+/*@import "~/.config/rofi/jinggo.rasi"*/
 
 configuration {
-	show-icons: false;
-	}
-
-* {
-	font: "Sans 12";
-	icon-size: 5ch;
-	}
+    modi:                       "drun,filebrowser,window,run";
+    show-icons:                 true;
+    display-drun:               "";
+    display-filebrowser:        "";
+    display-window:             "󱂬";
+    display-run:                "";
+    drun-display-format:        "{name}";
+}
 
 window {
-	padding: 10px;
-	width: 30%;
-	location: west;
-    anchor: west;
-    x-offset: 100px;
-    y-offset: 0;
-	}
+    transparency:                "real";
+    location:                    west;
+    anchor:                      west;
+    fullscreen:                  false;
+    width:                       850px;
+    height:                      500px;
+    x-offset:                    100px;
+    y-offset:                    0px;
 
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      2px solid;
+    border-radius:               20px;
+    border-color:                #A54558;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/* Main Box membagi kiri dan kanan */
 mainbox {
-	children: [ inputbar, listview ];
-	spacing: 10px;
-	}
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    background-color:            #282430;
+    children:                    [ "leftbox", "rightbox" ];
+    orientation:                 horizontal;
+}
 
-inputbar {
-	padding: 10px;
-	border: 1px solid;
-	}
+/* ================= LEFT BOX (BANNER & SIDEBAR) ================= */
+leftbox {
+    spacing:                     0px;
+    padding:                     0px;
+    background-color:            transparent;
+    background-image:            url("~/.dotfiles/.config/hypr/wallpapers/Ninja_Girl.jpg");
+    border-radius:               20px 0px 0px 20px;
+    orientation:                 horizontal;
+    children:                    [ "mode-switcher" ];
+    width:                       250px; /* Lebar bagian gambar */
+}
+
+/* Mode Switcher vertikal di paling kiri di atas gambar */
+mode-switcher {
+    enabled:                     true;
+    orientation:                 vertical;
+    spacing:                     10px;
+    margin:                      40px 10px;
+    padding:                     10px 5px;
+    width:                       45px;
+    background-color:            transparent; /* Hitam transparan di atas gambar */
+    border-radius:               25px;
+}
+
+button {
+    padding:                     0px;
+    border-radius:               100%;
+    background-color:            transparent;
+    text-color:                  #f5f2f2;
+    cursor:                      pointer;
+}
+
+button selected {
+    background-color:            transparent;
+    text-color:                  #f5f2f2;
+}
+
+/* ================= RIGHT BOX (LIST APLIKASI) ================= */
+rightbox {
+    padding:                     30px;
+    background-color:            transparent;
+    border-radius:               0px 20px 20px 0px;
+    children:                    [ "listview" ];
+}
 
 listview {
-	fixed-height: true;
-	spacing: 5px;
-	scrollbar: true;
-	lines: 5;
-	}
+    enabled:                     true;
+    columns:                     1;
+    lines:                       6;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     10px;
+    background-color:            #282430;
+    text-color:                  #f5f2f2;
+    cursor:                      "default";
+}
 
 element {
-	padding: 6px 10px;
-	spacing: 12px;
-	}
+    enabled:                     true;
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     10px 15px;
+    border-radius:               15px;
+    background-color:            transparent;
+    cursor:                      pointer;
+}
+
+element selected.normal {
+    background-color:            #A54558;
+    text-color:                  #ffffff;
+}
 
 element-icon {
-	size: 5ch;
-	}
+    background-color:            transparent;
+    text-color:                  #ffffff;
+    size:                        32px;
+    cursor:                      pointer;
+}
 
 element-text {
-	vertical-align: 0.5;
-	}
-
-//@theme "/home/blacklotus/.config/rofi/themes/niskala.rasi"
-
-
+    background-color:            transparent;
+    text-color:                  #ffffff; 
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    cursor:                      pointer;
+}
